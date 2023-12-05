@@ -241,12 +241,12 @@ int main() {
     cout << "\nDisjunctie (OR):\n";
     TruthTable(2, "A | B");
     cout << "\nDiferenta (XOR):\n";
-    TruthTable(2, "A & (!B)");
-    cout << "\nDiferenta simetrica (XNOR):\n";
     TruthTable(2, "A ^ B");
-    cout << "\n (NOR):\n";
+    cout << "\nDiferenta simetrica (XNOR):\n";
+    TruthTable(2, "!(A ^ B)");
+    cout << "\n(NOR):\n";
     TruthTable(2, "!(A | B)");
-    cout << "\n (NAND):\n";
+    cout << "\n(NAND):\n";
     TruthTable(2, "!(A & B)");
     cout << "\nImplicatia (A -> B):\n";
     TruthTable(2, "((!A) | B)");
